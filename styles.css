@@ -1,5 +1,5 @@
 :root {
-  --white: hsl(0, 0%, 90%);
+  --white: hsl(0, 0%, 95%);
   --green: hsl(75, 94%, 57%);
   --grey-700: hsl(0, 0%, 20%);
   --grey-800: hsl(0, 0%, 12%);
@@ -81,7 +81,6 @@ body {
 .link {
   display: flex;
   background-color: var(--grey-700);
-  color: var(--white);
   border: none;
   border-radius: 8px;
   font-weight: 600;
@@ -92,9 +91,17 @@ body {
   align-items: center;
 }
 
+.link:link {
+  color: var(--white);
+}
+
+.link:visited {
+  color: var(--white);
+}
+
 .link:hover {
   background-color: var(--green);
-  color: var(--grey-800);
+  color: var(--grey-900) !important;
 }
 
 .link:active {
