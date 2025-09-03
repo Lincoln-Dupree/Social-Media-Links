@@ -1,0 +1,99 @@
+:root {
+  --white: hsl(0, 0%, 90%);
+  --green: hsl(75, 94%, 57%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: "Figtree", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--grey-900);
+}
+
+.main-container {
+  background-color: var(--grey-800);
+  width: 300px;
+  height: 550px;
+  padding: 1.25rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 45% 55%;
+  grid-template-areas:
+    "user"
+    "links";
+  border-radius: 1rem;
+}
+
+.user-container {
+  grid-area: user;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 75px;
+  height: auto;
+  padding-top: 1rem;
+}
+
+.user-name {
+  padding-top: 1.5rem;
+  font-size: 2rem;
+  color: var(--white);
+  font-weight: 400;
+}
+
+.user-location {
+  color: var(--green);
+  padding-top: 0.5rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.user-description {
+  padding-top: 1.75rem;
+  color: var(--white);
+}
+
+.links-container {
+  grid-area: links;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btn {
+  background-color: var(--grey-700);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.125rem;
+  height: 16%;
+}
+
+.btn:hover {
+  background-color: var(--green);
+  color: var(--grey-800);
+}
+
+.btn:active {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
