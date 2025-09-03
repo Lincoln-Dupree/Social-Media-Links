@@ -101,7 +101,7 @@ body {
 
 .link:hover {
   background-color: var(--green);
-  color: var(--grey-900) !important;
+  color: var(--grey-900);
 }
 
 .link:active {
