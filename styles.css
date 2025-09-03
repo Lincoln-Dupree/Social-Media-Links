@@ -24,7 +24,7 @@ body {
 
 .main-container {
   background-color: var(--grey-800);
-  width: 300px;
+  width: 325px;
   height: 550px;
   padding: 1.25rem;
   display: grid;
@@ -78,7 +78,8 @@ body {
   justify-content: space-between;
 }
 
-.btn {
+.link {
+  display: flex;
   background-color: var(--grey-700);
   color: var(--white);
   border: none;
@@ -86,14 +87,17 @@ body {
   font-weight: 600;
   font-size: 1.125rem;
   height: 16%;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
 }
 
-.btn:hover {
+.link:hover {
   background-color: var(--green);
   color: var(--grey-800);
 }
 
-.btn:active {
+.link:active {
   font-size: 1.25rem;
   text-transform: uppercase;
 }
